@@ -19,6 +19,12 @@
     <li><b>Row:</b> A record in a table</li>
 </ul>
 
+<h3>Index:</h3>
+<ol>
+    <li><a href="">Retrieving Data</a></li>
+    <li><a href="">Sorting Data</a></li>
+</ol>
+
 <br>
 
 <h2>Retrieving Data</h2>
