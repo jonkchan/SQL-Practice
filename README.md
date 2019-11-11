@@ -8,14 +8,14 @@
     <li><a href="#FilteringData">Filtering Data</a></li>
 </ol>
 
-<a name="DefiningSQL"></a>
-
-<h2>Defining SQL</h2>
-
 <h3>Resources:</h3>
 <ul>
     <li>https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all</li>
 </ul>
+
+<a name="DefiningSQL"></a>
+
+<h2>Defining SQL</h2>
 
 <h3>What is SQL?</h3>
 <ol>
