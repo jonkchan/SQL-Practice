@@ -1,4 +1,4 @@
-# Learn SQL
+# A Quick Start Guide to Learning SQL
 
 <h3>Resources:</h3>
 <ul>
@@ -23,7 +23,7 @@
     <li><b>Row:</b> A record in a table</li>
 </ul>
 
-<br>
+<hr>
 
 <h3>Retrieving Data</h3>
 <p> To use SELECT to retrieve table data you must, at a minimum, specify two pieces of information</p>
