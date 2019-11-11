@@ -22,10 +22,10 @@
 <hr>
 
 <h3>Retrieving Data</h3>
-<p> To use SELECT to retrieve table data you must, at a minimum, specify two pieces of information</p>
+<p> To use the SELECT keyword to retrieve table data you must, at a minimum, specify two pieces of information</p>
 <ol>
-    <li> What do you want to select? (e.g. the CustomerName Column)</li>
-    <li> Where do you want to select from? (e.g. the Customers Table)</li>
+    <li> What do you want to select? (<i>e.g. CustomerName Column</i>)</li>
+    <li> Where do you want to select from? (<i>e.g. Customers Table</i>)</li>
 </ol>
 
 ```
@@ -33,7 +33,7 @@ SELECT CustomerName
 FROM Customers;
 ```
 
-<p> Notes: </o>
+<p> Note: </o>
 <ul>
     <li>All extra white space within a SQL statement is ignored when the statement is processed. SQL statements can be specificed on one long line or broken up over many lines</li>
     <li>Most SQL developers find that breaking up statements over multiple lines makes it easier to read and debug.</li>
@@ -52,5 +52,12 @@ CustomerName
 FROM
 Customers;
 ```
+
+<h3>Retrieving Multiple Columns</h3>
+<p>The difference with retrieving data from multiple columns is: <p>
+<ul>
+    <li>Multiple column names must be specified after the SELECT keyword</li>
+    <li>each column must be delimited by a comma</li>
+</ul>
 
 <hr>
