@@ -105,4 +105,22 @@ LIMIT 5;
 <ul>
     <li>To explicitly sort data retrieved using a SELECT statement, the ORDER BY keyword is used.</li>
     <li>ORDER BY takes the name of one or more columns by which to sort the output</li>
+    <li>To sort by descending order, ensure to include the DESC keyword</li>
 </ul>
+
+<h4>Example</h4>
+<p>The following SELECT statement with the GROUP BY keyword will retrieve the CustomerName Column in ASCENDING order from the Customers Table</p>
+
+```sql
+SELECT CustomerName
+FROM Customers
+ORDER BY CustomerName;
+```
+
+<p>The following SELECT statement with the GROUP BY keyword will retrieve the CustomerName Column in DESCENDING order from the Customers Table</p>
+
+```sql
+SELECT CustomerName
+FROM Customers
+ORDER BY CustomerName DESC;
+```
