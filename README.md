@@ -9,7 +9,7 @@
 
 <h3>Key Terms (<i>Simplified</i>):</h3>
 <ul>
-    <li>Database:</li>
-    <li>Table:</li>
-    <li>Column:</li>
+    <li><b>Database:</b> A container to store organized data</li>
+    <li><b>Table:</b> A structured list of data of a specific type</li>
+    <li><b>Column:</b> A single field in a table. ALl tables are made up of one or more columns</li>
 </ul>
