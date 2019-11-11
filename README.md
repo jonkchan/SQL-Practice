@@ -12,4 +12,12 @@
     <li><b>Database:</b> A container to store organized data</li>
     <li><b>Table:</b> A structured list of data of a specific type</li>
     <li><b>Column:</b> A single field in a table. ALl tables are made up of one or more columns</li>
+    <li><b>Row:</b> A record in a table</li>
 </ul>
+
+<h3>Retrieving Data</h3>
+<p> To use SELECT to retrieve table data you must, at a minimum, specify two pieces of information</p>
+<ol>
+    <li> What do you want to select? </li>
+    <li> Where do you want to select from?</li>
+</ol>
