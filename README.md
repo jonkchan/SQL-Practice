@@ -125,7 +125,7 @@ FROM Customers
 ORDER BY CustomerName DESC;
 ```
 
-<h3>Sorting by Multiple Columns</h3>
+<h4>Sorting by Multiple Columns</h4>
 <ul>
     <li>It is often neccessary to sort by multiple columns. For example, if you want to retireve a list of customer names and their countries in ASCENDING order.</li>
     <li>To sort by multiple columns, specify the column names seperated by commas</li>
@@ -138,3 +138,9 @@ SELECT CustomerName
 FROM Customers
 ORDER BY CustomerName, Country;
 ```
+
+<h4>Note:</h4>
+<ul>
+    <li>The DESC keyword only applies to the column name that directly preces it.</li>
+    <li>If you want to sort descending on multiple columns, be sure each column has its own DESC keyword</li>
+</ul>
