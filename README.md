@@ -19,7 +19,7 @@
     <li><b>Row:</b> A record in a table</li>
 </ul>
 
-<hr>
+<br>
 
 <h2>Retrieving Data</h2>
 
@@ -98,4 +98,4 @@ FROM Customers
 LIMIT 5;
 ```
 
-<hr>
+<h3>Sorting Data</h3>
