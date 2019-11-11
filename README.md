@@ -124,3 +124,17 @@ SELECT CustomerName
 FROM Customers
 ORDER BY CustomerName DESC;
 ```
+
+<h3>Sorting by Multiple Columns</h3>
+<ul>
+    <li>It is often neccessary to sort by multiple columns. For example, if you want to retireve a list of customer names and their countries in ASCENDING order.</li>
+    <li>To sort by multiple columns, specify the column names seperated by commas</li>
+</ul>
+
+<h4>Example:</h4>
+
+```sql
+SELECT CustomerName
+FROM Customers
+ORDER BY CustomerName, Country;
+```
