@@ -24,8 +24,8 @@
 <h3>Retrieving Data</h3>
 <p> To use SELECT to retrieve table data you must, at a minimum, specify two pieces of information</p>
 <ol>
-    <li> What do you want to select? </li>
-    <li> Where do you want to select from?</li>
+    <li> What do you want to select? (e.g. the CustomerName Column)</li>
+    <li> Where do you want to select from? (e.g. the Customers Table)</li>
 </ol>
 
 ```
@@ -35,7 +35,22 @@ FROM Customers;
 
 <p> Notes: </o>
 <ul>
-    <li>All extra white space within a SQL statement is ignored when the statement is processed.</li>
-    <li>SQL statements can be specificed on one long line or broken up over many lines</li>
+    <li>All extra white space within a SQL statement is ignored when the statement is processed. SQL statements can be specificed on one long line or broken up over many lines</li>
     <li>Most SQL developers find that breaking up statements over multiple lines makes it easier to read and debug.</li>
 </ul>
+
+<p>Examples:</p>
+
+```
+SELECT CustomerName
+FROM Customers;
+
+SELECT CustomerName FROM Customers;
+
+SELECT
+CustomerName
+FROM
+Customers;
+```
+
+<hr>
