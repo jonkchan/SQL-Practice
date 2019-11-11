@@ -21,7 +21,9 @@
 
 <hr>
 
-<h3>Retrieving Data</h3>
+<h2>Retrieving Data</h2>
+
+<h3>Retrieving Data from A Single Column</h3>
 <p> To use the SELECT keyword to retrieve table data you must, at a minimum, specify two pieces of information</p>
 <ol>
     <li> What do you want to select? (<i>e.g. CustomerName Column</i>)</li>
