@@ -98,4 +98,6 @@ FROM Customers
 LIMIT 5;
 ```
 
-<h3>Sorting Data</h3>
+<br>
+
+<h2>Sorting Data</h2>
