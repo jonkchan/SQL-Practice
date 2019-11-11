@@ -23,14 +23,14 @@
 
 <h2>Retrieving Data</h2>
 
-<h3>Retrieving Data from A Single Column</h3>
+<h3>Retrieving Data from a Single Column</h3>
 <p> To use the SELECT keyword to retrieve table data you must, at a minimum, specify two pieces of information</p>
 <ol>
     <li> What do you want to select? (<i>e.g. CustomerName Column</i>)</li>
     <li> Where do you want to select from? (<i>e.g. Customers Table</i>)</li>
 </ol>
 
-```
+```DML
 SELECT CustomerName
 FROM Customers;
 ```
@@ -43,7 +43,7 @@ FROM Customers;
 
 <h4>Example:</h4>
 
-```
+```DML
 SELECT CustomerName
 FROM Customers;
 
@@ -67,7 +67,7 @@ Customers;
 <h4>Example:</h4>
 <p>The following SELECT statement will retrieve three columns from the Customers table</p>
 
-```
+```DML
 SELECT CustomerName, Address, Country
 FROM Customers;
 ```
@@ -75,12 +75,11 @@ FROM Customers;
 <br>
 
 <h3>Retrieving Data from all Columns</h3>
-<p>In addition to being able to specify column(s), the SELECT keyword can be used to request all columns without having to list them out individually.</p>
-<p>This can be done by using the asterik (*) wildcard</p>
+<p>This In addition to being able to specify column(s), the SELECT keyword can be used to request all columns without having to list them out individually.This can be done by using the asterik (*) wildcard</p>
 
 <h4>Example:</h4>
 
-```
+```DML
 SELECT *
 FROM Customers;
 ```
@@ -92,7 +91,7 @@ FROM Customers;
 <h4>Example:</h4>
 <p>The following SELECT statement with the LIMIT keyword will retrieve the first 5 rows from the CustomerName Column from the Customers Table</p>
 
-```
+```DML
 SELECT CustomerName
 FROM Customers
 LIMIT 5;
