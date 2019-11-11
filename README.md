@@ -158,8 +158,16 @@ ORDER BY CustomerName, Country;
 <h4>Note:</h4>
 <ul>
     <li>The DESC keyword only applies to the column name that directly precedes it.</li>
-    <li>If you want to sort descending on multiple columns, be sure each column has its own DESC keyword.</li>
+    <li>If you want to sort descending on multiple columns, ensure each column has its own DESC keyword.</li>
 </ul>
+
+<h4>Example:</h4>
+
+```sql
+SELECT CustomerName
+FROM Customers
+ORDER BY CustomerName DESC, Country DESC;
+```
 
 <br>
 
