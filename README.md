@@ -83,4 +83,17 @@ SELECT *
 FROM Customers;
 ```
 
+<h3>Limiting Results</h3>
+<p>What if you only wanted to return the first row or a set number of rows?</p>
+<p>This can be done by specifying the quantity with the LIMIT keyword</p>
+
+<h4>Example:</h4>
+<p>The following SELECT statement with the LIMIT keyword will retrieve the first 5 rows from the CustomerName Column from the Customers Table</p>
+
+```
+SELECT CustomerName
+FROM Customers
+LIMIT 5;
+```
+
 <hr>
