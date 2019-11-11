@@ -30,7 +30,7 @@
     <li> Where do you want to select from? (<i>e.g. Customers Table</i>)</li>
 </ol>
 
-```DML
+```sql
 SELECT CustomerName
 FROM Customers;
 ```
@@ -43,7 +43,7 @@ FROM Customers;
 
 <h4>Example:</h4>
 
-```DML
+```sql
 SELECT CustomerName
 FROM Customers;
 
@@ -67,7 +67,7 @@ Customers;
 <h4>Example:</h4>
 <p>The following SELECT statement will retrieve three columns from the Customers table</p>
 
-```DML
+```sql
 SELECT CustomerName, Address, Country
 FROM Customers;
 ```
@@ -79,7 +79,7 @@ FROM Customers;
 
 <h4>Example:</h4>
 
-```DML
+```sql
 SELECT *
 FROM Customers;
 ```
@@ -91,7 +91,7 @@ FROM Customers;
 <h4>Example:</h4>
 <p>The following SELECT statement with the LIMIT keyword will retrieve the first 5 rows from the CustomerName Column from the Customers Table</p>
 
-```DDL
+```sql
 SELECT CustomerName
 FROM Customers
 LIMIT 5;
@@ -101,7 +101,7 @@ LIMIT 5;
 
 <h2>Sorting Data</h2>
 
-<h3>Order By<h3>
+<h3>Order By</h3>
 <ul>
     <li>To explicitly sort data retrieved using a SELECT statement, the ORDER BY keyword is used.</li>
     <li>ORDER BY takes the name of one or more columns by which to sort the output</li>
