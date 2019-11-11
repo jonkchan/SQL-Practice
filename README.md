@@ -1,5 +1,17 @@
 # A Quick Start Guide to Learning SQL
 
+<h3>Index:</h3>
+<ol>
+    <li><a href="#DefiningSQL">Defining SQL</a></li>
+    <li><a href="#RetrievingData">Retrieving Data</a></li>
+    <li><a href="#SortingData">Sorting Data</a></li>
+    <li><a href="#FilteringData">Filtering Data</a></li>
+</ol>
+
+<a name="DefiningSQL"></a>
+
+<h2>Defining SQL</h2>
+
 <h3>Resources:</h3>
 <ul>
     <li>https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all</li>
@@ -18,13 +30,6 @@
     <li><b>Column:</b> A single field in a table. All tables are made up of one or more columns</li>
     <li><b>Row:</b> A record in a table</li>
 </ul>
-
-<h3>Index:</h3>
-<ol>
-    <li><a href="#RetrievingData">Retrieving Data</a></li>
-    <li><a href="#SortingData">Sorting Data</a></li>
-    <li><a href="#FilteringData">Filtering Data</a></li>
-</ol>
 
 <br>
 
@@ -155,6 +160,8 @@ ORDER BY CustomerName, Country;
     <li>The DESC keyword only applies to the column name that directly precedes it.</li>
     <li>If you want to sort descending on multiple columns, be sure each column has its own DESC keyword.</li>
 </ul>
+
+<br>
 
 <a name="FilteringData"></a>
 
