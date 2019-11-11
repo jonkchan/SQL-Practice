@@ -6,6 +6,7 @@
     <li><a href="#RetrievingData">Retrieving Data</a></li>
     <li><a href="#SortingData">Sorting Data</a></li>
     <li><a href="#FilteringData">Filtering Data</a></li>
+    <li><a href="#AdvanceFiltering">Advance Filtering</a></li>
 </ol>
 
 <h3>Resources:</h3>
@@ -251,3 +252,14 @@ WHERE Country <> "Canada";
 
 <h3>Note:</h3>
 <p>!= and <> can usually be used interchangeablly, However, not all database management systems support both forms of the non-equality operator</p>
+
+<br>
+
+<a name="AdvanceFiltering"></a>
+
+<h2>Advance Filtering</h2>
+
+<h3>The AND keyword</h3>
+<h3>The OR keyword</h3>
+<h3>The IN keyword</h3>
+<h3>The NOT keyword</h3>
