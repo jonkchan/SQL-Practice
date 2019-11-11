@@ -182,7 +182,7 @@ ORDER BY CustomerName DESC, Country DESC;
 </ul>
 
 <h3>Example:</h3>
-<p>The following SELECT statement with the WHERE  keyword will retrieve the CustomerName Column where their Country field is equal to Canda</p>
+<p>The following SELECT statement with the WHERE  keyword will retrieve the CustomerName Column where their Country field is EQUAL to Canda</p>
 
 ```sql
 SELECT CustomerName
@@ -239,3 +239,15 @@ WHERE Country = "Canada";
     <td>Is a NULL value</td>
 </tr>
 </table>
+
+<h3>Example:</h3>
+<p>The following SELECT statement with the WHERE  keyword will retrieve the CustomerName Column where their Country field is NOT EQUAL to Canda</p>
+
+```sql
+SELECT CustomerName
+FROM Customers
+WHERE Country <> "Canada";
+```
+
+<h3>Note:</h3>
+<p>!= and <> can usually be used interchangeablly, However, not all database management systems support both forms of the non-equality operator</p>
