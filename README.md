@@ -33,13 +33,13 @@ SELECT CustomerName
 FROM Customers;
 ```
 
-<p> Note: </o>
+<h4> Note: </h4>
 <ul>
     <li>All extra white space within a SQL statement is ignored when the statement is processed. SQL statements can be specificed on one long line or broken up over many lines</li>
     <li>Most SQL developers find that breaking up statements over multiple lines makes it easier to read and debug.</li>
 </ul>
 
-<p>Example:</p>
+<h4>Example:</h4>
 
 ```
 SELECT CustomerName
@@ -62,7 +62,7 @@ Customers;
     <li>Each column must be seperated by a comma</li>
 </ul>
 
-<p>Example:</p>
+<h4>Example:</h4>
 <p>The following SELECT statement will retrieve three columns from the Customers table</p>
 
 ```
