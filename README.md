@@ -31,3 +31,14 @@
     <li> What do you want to select? </li>
     <li> Where do you want to select from?</li>
 </ol>
+
+```
+SELECT CustomerName
+FROM Customers;
+```
+
+<p> Notes: </o>
+<ul>
+    <li>All extra white space within a SQL statement is ignored when the statement is processed.</li>
+    <li>SQL statements can be specificed on one long line or broken up over many lines</li>
+</ul>
