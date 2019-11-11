@@ -174,3 +174,18 @@ ORDER BY CustomerName DESC, Country DESC;
 <a name="FilteringData"></a>
 
 <h2>Filtering Data</h2>
+
+<h3>The WHERE Keyword</h3>
+<ul>
+    <li>Within a SELECT statement, data is filtered by specifying search criteria in the WHERE clause</li>
+    <li>The WHERE keyword is specified after the FROM keyword</li>
+</ul>
+
+<h3>Example:</h3>
+<p>The following SELECT statement with the WHERE  keyword will retrieve the CustomerName Column where their Country field is equal to Canda</p>
+
+```sql
+SELECT CustomerName
+FROM Customers
+WHERE Country = "Canada";
+```
