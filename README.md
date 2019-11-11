@@ -39,7 +39,7 @@ FROM Customers;
     <li>Most SQL developers find that breaking up statements over multiple lines makes it easier to read and debug.</li>
 </ul>
 
-<p>Examples:</p>
+<p>Example:</p>
 
 ```
 SELECT CustomerName
@@ -53,11 +53,20 @@ FROM
 Customers;
 ```
 
+<br>
+
 <h3>Retrieving Multiple Columns</h3>
 <p>The difference with retrieving data from multiple columns is: <p>
 <ul>
     <li>Multiple column names must be specified after the SELECT keyword</li>
-    <li>each column must be delimited by a comma</li>
+    <li>Each column must be seperated by a comma</li>
 </ul>
+
+<p>Example:</p>
+
+```
+SELECT CustomerName, Address, Country
+FROM Customers;
+```
 
 <hr>
