@@ -100,3 +100,7 @@ LIMIT 5;
 <br>
 
 <h2>Sorting Data</h2>
+<ul>
+    <li>To explicitly sort data retrieved using a SELECT statement, the ORDER BY keyword is used.</li>
+    <li>ORDER BY takes the name of one or more columns by which to sort the output</li>
+</ul>
