@@ -55,7 +55,7 @@ Customers;
 
 <br>
 
-<h3>Retrieving Multiple Columns</h3>
+<h3>Retrieving Data from Multiple Columns</h3>
 <p>The difference with retrieving data from multiple columns is: <p>
 <ul>
     <li>Multiple column names must be specified after the SELECT keyword</li>
@@ -63,6 +63,7 @@ Customers;
 </ul>
 
 <p>Example:</p>
+<p>The following SELECT statement will retrieve three columns from the Customers table</p>
 
 ```
 SELECT CustomerName, Address, Country
