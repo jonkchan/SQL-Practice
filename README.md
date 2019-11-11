@@ -7,6 +7,8 @@
     <li>It is particularly useful in handling STRUCTURED data, i.e. data incorporating rleations among entities and variables</li>
 </ol>
 
+<br>
+
 <h3>Key Terms (<i>Simplified</i>):</h3>
 <ul>
     <li><b>Database:</b> A container to store organized data</li>
@@ -14,6 +16,8 @@
     <li><b>Column:</b> A single field in a table. ALl tables are made up of one or more columns</li>
     <li><b>Row:</b> A record in a table</li>
 </ul>
+
+<br>
 
 <h3>Retrieving Data</h3>
 <p> To use SELECT to retrieve table data you must, at a minimum, specify two pieces of information</p>
