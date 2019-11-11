@@ -23,6 +23,7 @@
 <ol>
     <li><a href="#RetrievingData">Retrieving Data</a></li>
     <li><a href="#SortingData">Sorting Data</a></li>
+    <li><a href="#FilteringData">Filtering Data</a></li>
 </ol>
 
 <br>
@@ -151,6 +152,10 @@ ORDER BY CustomerName, Country;
 
 <h4>Note:</h4>
 <ul>
-    <li>The DESC keyword only applies to the column name that directly preces it.</li>
-    <li>If you want to sort descending on multiple columns, be sure each column has its own DESC keyword</li>
+    <li>The DESC keyword only applies to the column name that directly precedes it.</li>
+    <li>If you want to sort descending on multiple columns, be sure each column has its own DESC keyword.</li>
 </ul>
+
+<a name="FilteringData"></a>
+
+<h2>Filtering Data</h2>
