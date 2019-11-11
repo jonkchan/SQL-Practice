@@ -22,13 +22,14 @@
 <h3>Index:</h3>
 <ol>
     <li><a href="#RetrievingData">Retrieving Data</a></li>
-    <li><a href="">Sorting Data</a></li>
+    <li><a href="#SortingData">Sorting Data</a></li>
 </ol>
 
 <br>
 
-<h2>Retrieving Data</h2>
 <a name="RetrievingData"></a>
+
+<h2>Retrieving Data</h2>
 
 <h3>Retrieving Data from a Single Column</h3>
 <p> To use the SELECT keyword to retrieve table data you must, at a minimum, specify two pieces of information</p>
@@ -105,6 +106,8 @@ LIMIT 5;
 ```
 
 <br>
+
+<a name="SortingData"></a>
 
 <h2>Sorting Data</h2>
 
