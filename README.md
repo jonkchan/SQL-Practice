@@ -189,3 +189,53 @@ SELECT CustomerName
 FROM Customers
 WHERE Country = "Canada";
 ```
+
+<h3>WHERE Clause Operators</h3>
+<p>SQL supports a whole range of conditional operators (depending on your database management system)</p>
+
+<table>
+<tr>
+    <th>Operator</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td><></td>
+    <td>Non-Equality</td>
+</tr>
+<tr>
+    <td>!=</td>
+    <td>Non-Equality</td>
+</tr>
+<tr>
+    <td><</td>
+    <td>Less Than</td>
+</tr>
+<tr>
+    <td><=</td>
+    <td>Less than or equal to</td>
+</tr>
+<tr>
+    <td>!<</td>
+    <td>Not less than</td>
+</tr>
+<tr>
+    <td>></td>
+    <td>Greather than</td>
+</tr>
+<tr>
+    <td>>=</td>
+    <td>Greather than or equal to</td>
+</tr>
+<tr>
+    <td>!></td>
+    <td>Not greater than</td>
+</tr>
+<tr>
+    <td>BETWEEN</td>
+    <td>Between two specificed values</td>
+</tr>
+<tr>
+    <td>IS NULL</td>
+    <td>Is a NULL value</td>
+</tr>
+</table>
