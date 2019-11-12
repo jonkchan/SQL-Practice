@@ -260,7 +260,7 @@ WHERE Country <> "Canada";
 <h2>Advance Filtering</h2>
 
 <h3>The AND keyword</h3>
-<p>To filter by  more than one column, you use the AND operator to append conditions to your WHERE clauses.</p>
+<p>To filter by more than one column, you use the AND operator to append conditions to your WHERE clauses.</p>
 
 <h3>Example:</h3>
 
@@ -271,7 +271,34 @@ WHERE Country = "Canada" AND City <> "Vancouver";
 ```
 
 <h3>The OR keyword</h3>
+<p>The OR operator retrieves rows that match either conditions listed under the WHERE clauses</p>
+
+<h3>Example:</h3>
+
+```sql
+SELECT CustomerName
+FROM Customers
+WHERE Country = "Canada" OR City <> "Vancouver";
+```
 
 <h3>The IN keyword</h3>
+<p>The IN operator is used to specify a range of conditions, any of which can be matched. In takes a comma-delimited list of valid values, all enclosed within parentheses</p>
+
+<h3>Example:</h3>
+
+```sql
+SELECT CustomerName
+FROM Customers
+WHERE Country IN ("USA", "Canada");
+```
 
 <h3>The NOT keyword</h3>
+<p>The WHERE claue's NOT operator has one function and one function only - NOT negates whatever condition comes next.</p>
+
+<h3>Example:</h3>
+
+```sql
+SELECT CustomerName
+FROM Customers
+WHERE NOT Country = "Canada";
+```
