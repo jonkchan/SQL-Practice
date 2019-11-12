@@ -182,7 +182,7 @@ ORDER BY CustomerName DESC, Country DESC;
     <li>The WHERE keyword is specified after the FROM keyword</li>
 </ul>
 
-<h3>Example:</h3>
+<h4>Example:</h4>
 <p>The following SELECT statement with the WHERE  keyword will retrieve the CustomerName Column where their Country field is EQUAL to Canda</p>
 
 ```sql
@@ -241,7 +241,7 @@ WHERE Country = "Canada";
 </tr>
 </table>
 
-<h3>Example:</h3>
+<h4>Example:</h4>
 <p>The following SELECT statement with the WHERE  keyword will retrieve the CustomerName Column where their Country field is NOT EQUAL to Canda</p>
 
 ```sql
@@ -262,7 +262,7 @@ WHERE Country <> "Canada";
 <h3>The AND keyword</h3>
 <p>To filter by more than one column, you use the AND operator to append conditions to your WHERE clauses.</p>
 
-<h3>Example:</h3>
+<h4>Example:</h4>
 
 ```sql
 SELECT CustomerName
@@ -273,7 +273,7 @@ WHERE Country = "Canada" AND City <> "Vancouver";
 <h3>The OR keyword</h3>
 <p>The OR operator retrieves rows that match either conditions listed under the WHERE clauses</p>
 
-<h3>Example:</h3>
+<h4>Example:</h4>
 
 ```sql
 SELECT CustomerName
@@ -284,7 +284,7 @@ WHERE Country = "Canada" OR City <> "Vancouver";
 <h3>The IN keyword</h3>
 <p>The IN operator is used to specify a range of conditions, any of which can be matched. In takes a comma-delimited list of valid values, all enclosed within parentheses</p>
 
-<h3>Example:</h3>
+<h4>Example:</h4>
 
 ```sql
 SELECT CustomerName
@@ -295,7 +295,7 @@ WHERE Country IN ("USA", "Canada");
 <h3>The NOT keyword</h3>
 <p>The WHERE claue's NOT operator has one function and one function only - NOT negates whatever condition comes next.</p>
 
-<h3>Example:</h3>
+<h4>Example:</h4>
 
 ```sql
 SELECT CustomerName
