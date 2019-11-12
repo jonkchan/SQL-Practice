@@ -7,6 +7,7 @@
     <li><a href="#SortingData">Sorting Data</a></li>
     <li><a href="#FilteringData">Filtering Data</a></li>
     <li><a href="#AdvanceFiltering">Advance Filtering</a></li>
+    <li><a href="#WildcardFiltering">Wildcard Filtering</a></li>
 </ol>
 
 <h3>Resources:</h3>
@@ -250,7 +251,7 @@ FROM Customers
 WHERE Country <> "Canada";
 ```
 
-<h3>Note:</h3>
+<h4>Note:</h4>
 <p>!= and <> can usually be used interchangeablly, However, not all database management systems support both forms of the non-equality operator</p>
 
 <br>
@@ -302,3 +303,11 @@ SELECT CustomerName
 FROM Customers
 WHERE NOT Country = "Canada";
 ```
+
+<br>
+
+<a name="Wildcard Filtering"></a>
+
+<h2>Wildcard Filtering</h2>
+
+<h3>The LIKE keyword</h3>
