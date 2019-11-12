@@ -2,20 +2,18 @@
 
 <h3>Index:</h3>
 <ol>
-    <li><a href="#DefiningSQL">Defining SQL</a></li>
-    <li><a href="#RetrievingData">Retrieving Data</a></li>
-    <li><a href="#SortingData">Sorting Data</a></li>
-    <li><a href="#FilteringData">Filtering Data</a></li>
-    <li><a href="#AdvanceFiltering">Advance Filtering</a></li>
-    <li><a href="#WildcardFiltering">Wildcard Filtering</a></li>
+    <li><a href="#Defining-SQL">Defining SQL</a></li>
+    <li><a href="#Retrieving-Data">Retrieving Data</a></li>
+    <li><a href="#Sorting-Data">Sorting Data</a></li>
+    <li><a href="#Filtering-Data">Filtering Data</a></li>
+    <li><a href="#Advance-Filtering">Advance Filtering</a></li>
+    <li><a href="#Wildcard-Filtering">Wildcard Filtering</a></li>
 </ol>
 
 <h3>Resources:</h3>
 <ul>
     <li>https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all</li>
 </ul>
-
-<a name="DefiningSQL"></a>
 
 <h2>Defining SQL</h2>
 
@@ -34,8 +32,6 @@
 </ul>
 
 <br>
-
-<a name="RetrievingData"></a>
 
 <h2>Retrieving Data</h2>
 
@@ -115,8 +111,6 @@ LIMIT 5;
 
 <br>
 
-<a name="SortingData"></a>
-
 <h2>Sorting Data</h2>
 
 <h3>Order By</h3>
@@ -172,8 +166,6 @@ ORDER BY CustomerName DESC, Country DESC;
 ```
 
 <br>
-
-<a name="FilteringData"></a>
 
 <h2>Filtering Data</h2>
 
@@ -256,8 +248,6 @@ WHERE Country <> "Canada";
 
 <br>
 
-<a name="AdvanceFiltering"></a>
-
 <h2>Advance Filtering</h2>
 
 <h3>The AND keyword</h3>
@@ -305,8 +295,6 @@ WHERE NOT Country = "Canada";
 ```
 
 <br>
-
-<a name="WildcardFiltering"></a>
 
 <h2>Wildcard Filtering</h2>
 
