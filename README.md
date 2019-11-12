@@ -294,7 +294,7 @@ WHERE Country IN ("USA", "Canada");
 ```
 
 <h3>The NOT keyword</h3>
-<p>The WHERE claue's NOT operator has one function and one function only - NOT negates whatever condition comes next.</p>
+<p>The WHERE clause's NOT operator has one function and one function only - NOT negates whatever condition comes next.</p>
 
 <h4>Example:</h4>
 
@@ -311,3 +311,8 @@ WHERE NOT Country = "Canada";
 <h2>Wildcard Filtering</h2>
 
 <h3>The LIKE keyword</h3>
+<ul>
+    <li>Using wildcards, you can create search patterns that can be compared against your data</li>
+    <li>The wildcards themselves are actually characters that have special meanings wihtin SQL WHERE clauses, and SQL supports several different wildcard types.</li>
+    <li>To use wildcards in search claues, the LIKE operator must be used.</li>
+</ul>
