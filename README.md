@@ -306,7 +306,7 @@ WHERE NOT Country = "Canada";
 
 <br>
 
-<a name="Wildcard Filtering"></a>
+<a name="WildcardFiltering"></a>
 
 <h2>Wildcard Filtering</h2>
 
