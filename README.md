@@ -260,6 +260,18 @@ WHERE Country <> "Canada";
 <h2>Advance Filtering</h2>
 
 <h3>The AND keyword</h3>
+<p>To filter by  more than one column, you use the AND operator to append conditions to your WHERE clauses.</p>
+
+<h3>Example:</h3>
+
+```sql
+SELECT CustomerName
+FROM Customers
+WHERE Country = "Canada" AND City <> "Vancouver";
+```
+
 <h3>The OR keyword</h3>
+
 <h3>The IN keyword</h3>
+
 <h3>The NOT keyword</h3>
