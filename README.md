@@ -1,59 +1,56 @@
 # A Quick Start Guide to Learning SQL
 
-<h3>Index:</h3>
-<ol>
-    <li><a href="#Defining-SQL">Defining SQL</a></li>
-    <li><a href="#Retrieving-Data">Retrieving Data</a></li>
-    <li><a href="#Sorting-Data">Sorting Data</a></li>
-    <li><a href="#Filtering-Data">Filtering Data</a></li>
-    <li><a href="#Advance-Filtering">Advance Filtering</a></li>
-    <li><a href="#Wildcard-Filtering">Wildcard Filtering</a></li>
-</ol>
+### Index:
 
-<h3>Resources:</h3>
-<ul>
-    <li>https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all</li>
-</ul>
+1. [Defining SQL](#Defining-SQL)
+2. [Retrieving Data](#Retrieving-Data)
+3. [Sorting Data](#Sorting-Data)
+4. [Filtering Data](#Filtering-Data)
+5. [Advance Filtering](#Advance-Filtering)
+6. [Wildcard Filtering](#Wildcard-Filtering)
 
-<h2>Defining SQL</h2>
+### Resources:
 
-<h3>What is SQL?</h3>
-<ol>
-    <li>Structured Query Language (SQL) is a domain specific language used in programming and designed for managed data held in relational database management</li>
-    <li>It is particularly useful in handling STRUCTURED data, i.e. data incorporating rleations among entities and variables</li>
-</ol>
+- [Online SQL Playground](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
 
-<h3>Key Terms (<i>Simplified</i>):</h3>
-<ul>
-    <li><b>Database:</b> A container to store organized data</li>
-    <li><b>Table:</b> A structured list of data of a specific type</li>
-    <li><b>Column:</b> A single field in a table. All tables are made up of one or more columns</li>
-    <li><b>Row:</b> A record in a table</li>
-</ul>
+---
 
-<br>
+## Defining SQL
 
-<h2>Retrieving Data</h2>
+### What is SQL?
 
-<h3>Retrieving Data from a Single Column</h3>
-<p> To use the SELECT keyword to retrieve table data you must, at a minimum, specify two pieces of information</p>
-<ol>
-    <li> What do you want to select? (<i>e.g. CustomerName Column</i>)</li>
-    <li> Where do you want to select from? (<i>e.g. Customers Table</i>)</li>
-</ol>
+- Structured Query Language (SQL) is a domain specific language used in programming and designed for managed data held in relational database management
+- It is particularly useful in handling STRUCTURED data, i.e. data incorporating rleations among entities and variables
+
+### Key Terms (_Simplified_):
+
+- **Database:** A container to store organized data
+- **Table:** A structured list of data of a specific type
+- **Column:** A single field in a table. All tables are made up of one or more columns
+- **Row:** A record in a table
+
+---
+
+## Retrieving Data
+
+### Retrieving Data from a Single Column
+
+To use the SELECT keyword to retrieve table data you must, at a minimum, specify two pieces of information
+
+- What do you want to select? (_e.g. CustomerName Column_)
+- Where do you want to select from? (_e.g. Customers Table_)
 
 ```sql
 SELECT CustomerName
 FROM Customers;
 ```
 
-<h4> Note: </h4>
-<ul>
-    <li>All extra white space within a SQL statement is ignored when the statement is processed. SQL statements can be specificed on one long line or broken up over many lines</li>
-    <li>Most SQL developers find that breaking up statements over multiple lines makes it easier to read and debug.</li>
-</ul>
+#### Note:
 
-<h4>Example:</h4>
+- All extra white space within a SQL statement is ignored when the statement is processed. SQL statements can be specificed on one long line or broken up over many lines
+- Most SQL developers find that breaking up statements over multiple lines makes it easier to read and debug.
+
+#### Example:
 
 ```sql
 SELECT CustomerName
@@ -67,41 +64,45 @@ FROM
 Customers;
 ```
 
-<br>
+---
 
-<h3>Retrieving Data from Multiple Columns</h3>
-<p>The difference with retrieving data from multiple columns is: <p>
-<ul>
-    <li>Multiple column names must be specified after the SELECT keyword</li>
-    <li>Each column must be seperated by a comma</li>
-</ul>
+### Retrieving Data from Multiple Columns
 
-<h4>Example:</h4>
-<p>The following SELECT statement will retrieve three columns from the Customers table</p>
+The difference with retrieving data from multiple columns is:
+
+- Multiple column names must be specified after the SELECT keyword
+- Each column must be seperated by a comma
+
+#### Example:
+
+The following SELECT statement will retrieve three columns from the Customers table
 
 ```sql
 SELECT CustomerName, Address, Country
 FROM Customers;
 ```
 
-<br>
+---
 
-<h3>Retrieving Data from all Columns</h3>
-<p>This In addition to being able to specify column(s), the SELECT keyword can be used to request all columns without having to list them out individually.This can be done by using the asterik (*) wildcard</p>
+### Retrieving Data from all Columns
 
-<h4>Example:</h4>
+This In addition to being able to specify column(s), the SELECT keyword can be used to request all columns without having to list them out individually.This can be done by using the asterik (\*) wildcard
+
+#### Example:
 
 ```sql
 SELECT *
 FROM Customers;
 ```
 
-<h3>Limiting Results</h3>
-<p>What if you only wanted to return the first row or a set number of rows?</p>
-<p>This can be done by specifying the quantity with the LIMIT keyword</p>
+### Limiting Results
 
-<h4>Example:</h4>
-<p>The following SELECT statement with the LIMIT keyword will retrieve the first 5 rows from the CustomerName Column from the Customers Table</p>
+What if you only wanted to return the first row or a set number of rows?
+This can be done by specifying the quantity with the LIMIT keyword
+
+#### Example:
+
+The following SELECT statement with the LIMIT keyword will retrieve the first 5 rows from the CustomerName Column from the Customers Table
 
 ```sql
 SELECT CustomerName
@@ -109,19 +110,19 @@ FROM Customers
 LIMIT 5;
 ```
 
-<br>
+---
 
-<h2>Sorting Data</h2>
+## Sorting Data
 
-<h3>Order By</h3>
-<ul>
-    <li>To explicitly sort data retrieved using a SELECT statement, the ORDER BY keyword is used.</li>
-    <li>ORDER BY takes the name of one or more columns by which to sort the output</li>
-    <li>To sort by descending order, ensure to include the DESC keyword</li>
-</ul>
+### Order By
 
-<h4>Example</h4>
-<p>The following SELECT statement with the GROUP BY keyword will retrieve the CustomerName Column in ASCENDING order from the Customers Table</p>
+- To explicitly sort data retrieved using a SELECT statement, the ORDER BY keyword is used.
+- ORDER BY takes the name of one or more columns by which to sort the output
+- To sort by descending order, ensure to include the DESC keyword
+
+#### Example
+
+The following SELECT statement with the GROUP BY keyword will retrieve the CustomerName Column in ASCENDING order from the Customers Table
 
 ```sql
 SELECT CustomerName
@@ -129,7 +130,7 @@ FROM Customers
 ORDER BY CustomerName;
 ```
 
-<p>The following SELECT statement with the GROUP BY keyword will retrieve the CustomerName Column in DESCENDING order from the Customers Table</p>
+The following SELECT statement with the GROUP BY keyword will retrieve the CustomerName Column in DESCENDING order from the Customers Table
 
 ```sql
 SELECT CustomerName
@@ -137,13 +138,12 @@ FROM Customers
 ORDER BY CustomerName DESC;
 ```
 
-<h4>Sorting by Multiple Columns</h4>
-<ul>
-    <li>It is often neccessary to sort by multiple columns. For example, if you want to retireve a list of customer names and their countries in ASCENDING order.</li>
-    <li>To sort by multiple columns, specify the column names seperated by commas</li>
-</ul>
+#### Sorting by Multiple Columns
 
-<h4>Example:</h4>
+- It is often neccessary to sort by multiple columns. For example, if you want to retireve a list of customer names and their countries in ASCENDING order.
+- To sort by multiple columns, specify the column names seperated by commas
+
+#### Example:
 
 ```sql
 SELECT CustomerName
@@ -151,13 +151,12 @@ FROM Customers
 ORDER BY CustomerName, Country;
 ```
 
-<h4>Note:</h4>
-<ul>
-    <li>The DESC keyword only applies to the column name that directly precedes it.</li>
-    <li>If you want to sort descending on multiple columns, ensure each column has its own DESC keyword.</li>
-</ul>
+#### Note:
 
-<h4>Example:</h4>
+- The DESC keyword only applies to the column name that directly precedes it.
+- If you want to sort descending on multiple columns, ensure each column has its own DESC keyword.
+
+#### Example:
 
 ```sql
 SELECT CustomerName
@@ -165,18 +164,18 @@ FROM Customers
 ORDER BY CustomerName DESC, Country DESC;
 ```
 
-<br>
+---
 
-<h2>Filtering Data</h2>
+## Filtering Data
 
-<h3>The WHERE Keyword</h3>
-<ul>
-    <li>Within a SELECT statement, data is filtered by specifying search criteria in the WHERE clause</li>
-    <li>The WHERE keyword is specified after the FROM keyword</li>
-</ul>
+### The WHERE Keyword
 
-<h4>Example:</h4>
-<p>The following SELECT statement with the WHERE  keyword will retrieve the CustomerName Column where their Country field is EQUAL to Canda</p>
+- Within a SELECT statement, data is filtered by specifying search criteria in the WHERE clause
+- The WHERE keyword is specified after the FROM keyword
+
+#### Example:
+
+The following SELECT statement with the WHERE keyword will retrieve the CustomerName Column where their Country field is EQUAL to Canda
 
 ```sql
 SELECT CustomerName
@@ -184,8 +183,9 @@ FROM Customers
 WHERE Country = "Canada";
 ```
 
-<h3>WHERE Clause Operators</h3>
-<p>SQL supports a whole range of conditional operators (depending on your database management system)</p>
+### WHERE Clause Operators
+
+SQL supports a whole range of conditional operators (depending on your database management system)
 
 <table>
 <tr>
@@ -234,8 +234,9 @@ WHERE Country = "Canada";
 </tr>
 </table>
 
-<h4>Example:</h4>
-<p>The following SELECT statement with the WHERE  keyword will retrieve the CustomerName Column where their Country field is NOT EQUAL to Canda</p>
+#### Example:
+
+The following SELECT statement with the WHERE keyword will retrieve the CustomerName Column where their Country field is NOT EQUAL to Canda
 
 ```sql
 SELECT CustomerName
@@ -243,17 +244,19 @@ FROM Customers
 WHERE Country <> "Canada";
 ```
 
-<h4>Note:</h4>
-<p>!= and <> can usually be used interchangeablly, However, not all database management systems support both forms of the non-equality operator</p>
+#### Note:
 
-<br>
+!= and <> can usually be used interchangeablly, However, not all database management systems support both forms of the non-equality operator
 
-<h2>Advance Filtering</h2>
+---
 
-<h3>The AND keyword</h3>
-<p>To filter by more than one column, you use the AND operator to append conditions to your WHERE clauses.</p>
+## Advance Filtering
 
-<h4>Example:</h4>
+### The AND keyword
+
+To filter by more than one column, you use the AND operator to append conditions to your WHERE clauses.
+
+#### Example:
 
 ```sql
 SELECT CustomerName
@@ -261,10 +264,11 @@ FROM Customers
 WHERE Country = "Canada" AND City <> "Vancouver";
 ```
 
-<h3>The OR keyword</h3>
-<p>The OR operator retrieves rows that match either conditions listed under the WHERE clauses</p>
+### The OR keyword
 
-<h4>Example:</h4>
+The OR operator retrieves rows that match either conditions listed under the WHERE clauses
+
+#### Example:
 
 ```sql
 SELECT CustomerName
@@ -272,10 +276,11 @@ FROM Customers
 WHERE Country = "Canada" OR City <> "Vancouver";
 ```
 
-<h3>The IN keyword</h3>
-<p>The IN operator is used to specify a range of conditions, any of which can be matched. In takes a comma-delimited list of valid values, all enclosed within parentheses</p>
+### The IN keyword
 
-<h4>Example:</h4>
+The IN operator is used to specify a range of conditions, any of which can be matched. In takes a comma-delimited list of valid values, all enclosed within parentheses
+
+#### Example:
 
 ```sql
 SELECT CustomerName
@@ -283,10 +288,11 @@ FROM Customers
 WHERE Country IN ("USA", "Canada");
 ```
 
-<h3>The NOT keyword</h3>
-<p>The WHERE clause's NOT operator has one function and one function only - NOT negates whatever condition comes next.</p>
+### The NOT keyword
 
-<h4>Example:</h4>
+The WHERE clause's NOT operator has one function and one function only - NOT negates whatever condition comes next.
+
+#### Example:
 
 ```sql
 SELECT CustomerName
@@ -294,13 +300,14 @@ FROM Customers
 WHERE NOT Country = "Canada";
 ```
 
-<br>
+---
 
-<h2>Wildcard Filtering</h2>
+## Wildcard Filtering
 
-<h3>The LIKE keyword</h3>
-<ul>
-    <li>Using wildcards, you can create search patterns that can be compared against your data</li>
-    <li>The wildcards themselves are actually characters that have special meanings wihtin SQL WHERE clauses, and SQL supports several different wildcard types.</li>
-    <li>To use wildcards in search claues, the LIKE operator must be used.</li>
-</ul>
+### The LIKE keyword
+
+- Using wildcards, you can create search patterns that can be compared against your data
+- The wildcards themselves are actually characters that have special meanings wihtin SQL WHERE clauses, and SQL supports several different wildcard types.
+- To use wildcards in search claues, the LIKE operator must be used.
+
+---
