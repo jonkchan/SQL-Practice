@@ -513,7 +513,7 @@ FROM Products
 
 ### Creating Groups
 
-- Grouping lets you divide data into logical sets so that you can perform aggregate calculaitons on each group.
+- Grouping lets you divide data into logical sets so that you can perform aggregate calculations on each group.
 - Groups are created using the GROUP BY clause in your SELECT statement.
 
 #### Important Rules:
@@ -535,10 +535,10 @@ GROUP BY CategoryID
 ### Filtering Groups
 
 - SQL allows you to filter which groups to include and which to exclude.
-- For example, you might want a list of all customers who have made at least two orders.
-- To obtain this data you must filter based on the complete group, not on individual rows.
+  - For example, you might want a list of all customers who have made at least two orders.
+  - To obtain this data you must filter based on the complete group, not on individual rows.
 - SQL provides a clauses for this purpose: the HAVING clause
-- HAVING is very similiar to WHERE, all types of WHERE clauses can also be used with HAVING.
+  - HAVING is very similiar to WHERE, all types of WHERE clauses can also be used with HAVING.
 
 #### Example
 
