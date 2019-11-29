@@ -1,6 +1,6 @@
 # A Quick Start Guide to Learning SQL
 
-### Index:
+### Table of Contents:
 
 1. [Defining SQL](#Defining-SQL)
 2. [Retrieving Data](#Retrieving-Data)
@@ -8,6 +8,7 @@
 4. [Filtering Data](#Filtering-Data)
 5. [Advance Filtering](#Advance-Filtering)
 6. [Wildcard Filtering](#Wildcard-Filtering)
+7. [Calculated Fields](#Calculated-Fields)
 
 ### Resources:
 
@@ -306,8 +307,108 @@ WHERE NOT Country = "Canada";
 
 ### The LIKE keyword
 
+- **Wildcards:** Special characters used to match parts of a value
+- **Search pattern:** A seach condition made up o fliteral text, wildcard characters, or any combination of the above.
 - Using wildcards, you can create search patterns that can be compared against your data
-- The wildcards themselves are actually characters that have special meanings wihtin SQL WHERE clauses, and SQL supports several different wildcard types.
 - To use wildcards in search claues, the LIKE operator must be used.
+
+### The Percent Sign (%) Wildcard
+
+- The most frequently used wildcard is the percent sign (%).
+- Within a search string, % means, match any number of occurrences of any character.
+
+#### Example:
+
+- To find all customers that start with the letter A, you can issue the following SELECT statement.
+
+```sql
+SELECT CustomerName
+FROM Customers
+Where CustomerName LIKE 'A%'
+```
+
+- To find all customers that have the letter A in their name, you can issue the following SELECT statement.
+
+```sql
+SELECT CustomerName
+FROM Customers
+Where CustomerName LIKE '%a%'
+```
+
+#### Note:
+
+- If you are using Microsoft Access, then you may need to use \* instead of %.
+- Depending on your DBMS and how it is configured, searches may be case-sensitive.
+
+---
+
+## Calculated Fields
+
+### What is a Calculated Field?
+
+- Data stored within a database's tables is often not available in the exact format needed by your application.
+  - City, State, and ZIP codes are stored in separate columns, but your mailing lable needs them retireved as one correctly formatted field.
+  - Column data is in mixed upper and lowercase, and your report needs all data presented in uppercase.
+  - You need total, averages, or other calculations based on table data.
+- What you really want is to retrieve converted, calculated, or reformatted data directly from the database.
+- Calculated fields don't actually exist in database tables but rather a calculated field is created on-the-fly within a SQL SELECT statement.
+
+### Concatenating Fields
+
+- **Concatenate:** Joining values together (_by appending them to each other_) to form a single long value.
+- The Customers table contains Address, City, PostalCode, and Country
+  - For your report, you want to concatenate the columns to make one full address.
+- In SQL SELECT statements, you can concatenate columns using a special operator.
+  - Depending on what DBMS you are using, this can be a plus sign (+) or two pipes (||).
+
+#### Example:
+
+Concatenation performed with plus sign (+)
+
+```sql
+SELECT Address + City + PostalCode + Country
+FROM Customers
+```
+
+Concatenation performed with two pipes (||)
+
+```sql
+SELECT Address || City || PostalCode || Country
+FROM Customers
+```
+
+### Using Aliases
+
+- The SELECT statement used to concatenate the address field works well but what is the name of the new calculated field? The truth is, it has no name; it is simply a value
+- To solve this problem, SQL supports aliases.
+  - Alias: an alternative name for a field or value.
+  - Aliases are assigned with the AS keyword
+  - Use of the AS keyword is optional, but using it is considered a best practice
+
+#### Example:
+
+```sql
+SELECT Address + City + PostalCode + Country AS full_address
+FROM Customers
+```
+
+### Performing Calculations
+
+- Another frequent use of calculated fileds is performing mathematical calculations on retrieved data.
+- SQL supports the basic mathematical operators listed below:
+
+| Operator | Description    |
+| -------- | -------------- |
+| +        | Addition       |
+| -        | Subtraction    |
+| \*       | Multiplication |
+| /        | Division       |
+
+#### Example:
+
+```sql
+SELECT Price / 2 As half_off_price
+FROM Products
+```
 
 ---
