@@ -9,6 +9,8 @@
 5. [Advance Filtering](#Advance-Filtering)
 6. [Wildcard Filtering](#Wildcard-Filtering)
 7. [Calculated Fields](#Calculated-Fields)
+8. [Summarizing Data](#Summarizing-Data)
+9. [Grouping Data](#Grouping-Data)
 
 ### Resources:
 
@@ -444,3 +446,72 @@ FROM Products
 ```
 
 ---
+
+## Summarizing Data
+
+### Aggregate Functions
+
+- **Aggregate Functions:** Functions that operate on a set of rows to calculate and return a single value.
+
+### The AVG() Function
+
+- AVG() is used to return the average value of a specific column by counting the number of rows in the table and the sum of their values.
+- AVG() can be used to return the average value of all columns or of specific columns or rows.
+
+#### Example:
+
+```sql
+SELECT AVG(Price) As avg_price
+FROM Products
+```
+
+### The COUNT() Function
+
+- COUNT() is used to determine the number of rows in a table or the number of rows that match a specific criterion
+- COUNT() can be used two ways:
+  - Use COUNT(\*) to count the number of rows in a table, whether the columns contain values or NULL values.
+  - Use COUNT(column) to count the number of rows that have values in a specific column, ignoring NULL values.
+
+#### Example:
+
+```sql
+SELECT COUNT(*) As num_of_customers
+FROM Customers
+```
+
+#### Note:
+
+- NULL Values - Column rows with NULL values in them are ignored by the COUNT() function if a column name is specified, but not if the asterik (\*) is used.
+
+### The MAX() / MIN() Function
+
+- MAX() returns the highest value in a specified column.
+- MIN() returns the lowest value in a specificied column.
+- MAX() & MIN() require that the column name be specified.
+
+#### Example:
+
+```sql
+SELECT MIN(Price) As min_price
+FROM Products
+```
+
+### The SUM() Function
+
+- SUM() is used to return the sum (total) of the values in a specific column.
+
+#### Example:
+
+```sql
+SELECT MIN(Price) As total_price
+FROM Products
+```
+
+---
+
+## Grouping Data
+
+### Creating Groups
+
+- Grouping lets you divide data into logical sets so that you can perform aggregate calculaitons on each group.
+- Groups are created using the GROUP BY clause in your SELECT statement.
