@@ -1,5 +1,7 @@
 # A Quick Start Guide to Learning SQL
 
+>
+
 ### Table of Contents:
 
 1. [Defining SQL](#Defining-SQL)
@@ -11,10 +13,15 @@
 7. [Calculated Fields](#Calculated-Fields)
 8. [Summarizing Data](#Summarizing-Data)
 9. [Grouping Data](#Grouping-Data)
+10. [Subqueries](#Subqueries)
+11. [Joining Tables](#Joining-Tables)
+12. [Advanced Joins](#Advanced-Joins)
+13. [Combining Queries](#Combining-Queries)
 
 ### Resources:
 
-- [Online SQL Playground](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
+- [SQL Playground](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
+- [SQL Quiz](https://www.w3schools.com/sql/sql_quiz.asp)
 
 ---
 
@@ -557,4 +564,35 @@ HAVING COUNT(*) > 2
   - WHERE filters before data is grouped, and HAVING filters after data is grouped.
   - Rows that are eliminated by a WHERE clauses will not be included in the group. This could change the calculated values which in turn could affect which groups are filtered based on the use of those values in the HAVING clauses.
 
+### SELECT Clause Ordering
+
+- This is a good time to review the order in which SELECT statement clauses are to be specified.
+
+| Operator | Description                           | Require                                 |
+| -------- | ------------------------------------- | --------------------------------------- |
+| SELECT   | Columns or expressions to be returned | Yes                                     |
+| FROM     | Table to retrieve data from           | Only if selecting data from a table     |
+| WHERE    | Row-level filtering                   | No                                      |
+| GROUP BY | Group specification                   | Only if calculating aggregates by group |
+| HAVING   | Group-level filtering                 | No                                      |
+| ORDER BY | Output sort order                     | No                                      |
+
 ---
+
+## Subqueries
+
+---
+
+## Joining Tables
+
+---
+
+## Advanced Joins
+
+---
+
+## Combining Queries
+
+---
+
+> You have reached the end of the SQL quick start guide!
