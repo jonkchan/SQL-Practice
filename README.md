@@ -503,7 +503,7 @@ FROM Products
 #### Example:
 
 ```sql
-SELECT MIN(Price) As total_price
+SELECT SUM(Price) As total_price
 FROM Products
 ```
 
@@ -515,3 +515,46 @@ FROM Products
 
 - Grouping lets you divide data into logical sets so that you can perform aggregate calculaitons on each group.
 - Groups are created using the GROUP BY clause in your SELECT statement.
+
+#### Important Rules:
+
+- GROUP BY claues can contain as many columns as you want. This enables you to nest groups, providing you wiht more granular control over how data is grouped.
+- If you have nested groups in your GROUP BY clauses, data is summarized at the last specified group. In other words, all the columns specified are evaluated together when grouping is established,
+- The GROUP BY clause must come after any WHERE clauses and before any ORDER BY clause.
+
+#### Example
+
+- The below SELECT statement uses the GROUP BY clause to instruct the DBMS to sort the data and group it by CategoryID.
+
+```sql
+SELECT AVG(*) AS num_of_products
+FROM Products
+GROUP BY CategoryID
+```
+
+### Filtering Groups
+
+- SQL allows you to filter which groups to include and which to exclude.
+- For example, you might want a list of all customers who have made at least two orders.
+- To obtain this data you must filter based on the complete group, not on individual rows.
+- SQL provides a clauses for this purpose: the HAVING clause
+- HAVING is very similiar to WHERE, all types of WHERE clauses can also be used with HAVING.
+
+#### Example
+
+- The below SELECT statement groups by CategoryID and returns the data where the count of products for each group of categories is greater than 2.
+
+```sql
+SELECT COUNT(*) AS count_of_products
+FROM Products
+GROUP BY CategoryID
+HAVING COUNT(*) > 2
+```
+
+#### Note:
+
+- The Difference between HAVING and WHERE
+  - WHERE filters before data is grouped, and HAVING filters after data is grouped.
+  - Rows that are eliminated by a WHERE clauses will not be included in the group. This could change the calculated values which in turn could affect which groups are filtered based on the use of those values in the HAVING clauses.
+
+---
