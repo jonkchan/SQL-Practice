@@ -340,6 +340,38 @@ Where CustomerName LIKE '%a%'
 - If you are using Microsoft Access, then you may need to use \* instead of %.
 - Depending on your DBMS and how it is configured, searches may be case-sensitive.
 
+### The Underscore (\_) Wildcard
+
+- The underscore is used just like % but instead of matching multiple characters the underscore matches just a single character.
+
+#### Example:
+
+- To find all customers that live in the postal codes between 12200 to 12209, you can issue the following SELECT statement.
+
+```sql
+SELECT CustomerName
+FROM Customers
+Where PostalCode LIKE '1220_'
+```
+
+#### Note:
+
+- If you are using Microsoft Access, then you may need to use ? instead of \_.
+
+### The Brackets ([]) Wildcard
+
+- The brackets ([]) is used to specify a set of characters, any one of which must match a character in the specified position (the location of the wildcard).
+
+#### Example:
+
+- To find all customers that start with the letter A or B, you can issue the following SELECT statement.
+
+```sql
+SELECT CustomerName
+FROM Customers
+Where CustomerName LIKE '[AB]%'
+```
+
 ---
 
 ## Calculated Fields
