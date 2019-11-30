@@ -1,6 +1,6 @@
 # A Quick Start Guide to Learning SQL
 
->
+> Give ordinary people the right tools and they will design and build the most extraordinary things. - Neil Gershenfeld
 
 ### Table of Contents:
 
@@ -580,6 +580,41 @@ HAVING COUNT(*) > 2
 ---
 
 ## Subqueries
+
+### Understanding Subqueries
+
+- **Subquery:** queries that are embedded into other queries
+- Subqueries can be used to combine multiple queries into one single statement.
+
+#### Example:
+
+- The below SQL statement returns all products with suppliers located in the USA
+
+```sql
+SELECT ProductName, SupplierID
+FROM Products
+WHERE SupplierID IN (SELECT SupplierID
+                    FROM Suppliers
+                    WHERE Country = 'USA')
+
+```
+
+### Using Subqueries as Calculated Fields
+
+- Another way to use subqueries is in creating calculated fields
+
+#### Example:
+
+- The below SQL statement returns the suppliers from the Suppliers table with a count of their products.
+
+```sql
+SELECT SupplierID,
+        SupplierName,
+        (SELECT COUNT(*)
+        FROM Products
+        WHERE Products.SupplierID = Suppliers.SupplierID) As product_count
+FROM Suppliers
+```
 
 ---
 
