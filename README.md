@@ -581,7 +581,7 @@ HAVING COUNT(*) > 2
 
 ## Subqueries
 
-### Understanding Subqueries
+### Filtering by Subqueries
 
 - **Subquery:** queries that are embedded into other queries
 - Subqueries can be used to combine multiple queries into one single statement.
@@ -620,9 +620,60 @@ FROM Suppliers
 
 ## Joining Tables
 
+### Why use Joins?
+
+- Breaking data into multiple tables enables more efficient storage, easier manipulation, and greater scalability. If data is stored in multiple tables, how can you retrieve that data with a single SELECT statement?
+- The answer is to use a join. A join is a mechanism used to associate tables wihtin a SELECT statement.
+- Using a special syntax, multiple tables can be joined so that a single set of output is returned, and the join associates the correct rows in each table on-the-fly.
+
+### Creating a Join
+
+- Creating a join is very simple. You must specify all the tables to be included and how they are related to each other.
+
+#### Example:
+
+```sql
+SELECT Products.ProductName, Suppliers.SupplierName, Suppliers.Country
+FROM Products, Suppliers
+WHERE Products.SupplierID = Suppliers.SupplierID
+```
+
+### The Importance of the WHERE clause
+
+- The WHERE clause acts as a filter to only include rows that match the specified filter condiiton - the join condiiton.
+- Without the WHERE clause, every row in the first table will be paired with every row in the second table, regardless if they logically go together or not.
+
+#### Example:
+
+- Run the below SQL statement to see the difference between the SQL statements with and without the WHERE clause
+
+```sql
+SELECT Products.ProductName, Suppliers.SupplierName, Suppliers.Country
+FROM Products, Suppliers
+```
+
 ---
 
 ## Advanced Joins
+
+### Using Table Aliases
+
+- In addition to using aliases for column names and calculated fields, SQL also enables you to alias table names. There are two primary reasons to do this:
+
+  - To shorten the SQL syntax
+  - To enable multiple uses of the same table within a single SELECT statement
+
+#### Example:
+
+```sql
+SELECT p.ProductName, s.SupplierName, s.Country
+FROM Products AS p, Suppliers AS s
+WHERE p.SupplierID = s.SupplierID
+```
+
+#### Note:
+
+- Not all DBMS support the AS keyword. In that case, simply specify the alias without the AS keyword (so `Products p` instead of `Products AS p`).
 
 ---
 
