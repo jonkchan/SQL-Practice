@@ -4,6 +4,15 @@
 
 Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) to get started
 
+### Topics:
+
+1. [Basic Queries](#Basic-Queries)
+2. [Calculated Fields](#Calculated-Fields)
+3. [Grouping Data](#Grouping-Data)
+4. [Union](#Union)
+5. [Join Queries](#Join-Queries)
+6. [Case Examples](#Case-Examples)
+
 ## Basic Queries
 
 1. Query all OrderDetails where order quantity is greater than 10 but less than 30
