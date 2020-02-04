@@ -726,7 +726,9 @@ SELECT Country FROM Customers
 
 #### Example:
 
-- The below SQL statement returns a value of LOW if the order quantity is less than 20. If the order quantity is greater or equal to 20 and less than 40, a value of MEDIUM is returned. If the order does not meet the first two conditions, a value of HIGH is returned
+- The below SQL statement returns a value of LOW if the order quantity is less than 20.
+- If the order quantity is greater or equal to 20 and less than 40, a value of MEDIUM is returned.
+- If the order does not meet the first two conditions, the else clause returns a value of HIGH
 
 ```sql
 SELECT OrderID,
