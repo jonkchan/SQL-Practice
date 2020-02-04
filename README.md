@@ -676,6 +676,10 @@ WHERE p.SupplierID = s.SupplierID
 
 - Not all DBMS support the AS keyword. In that case, simply specify the alias without the AS keyword (so `Products p` instead of `Products AS p`).
 
+### INNER, LEFT/ RIGHT, OUTER JOIN
+
+- To be updated...
+
 ---
 
 ## Combining Queries
