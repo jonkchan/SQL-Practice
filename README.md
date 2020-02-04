@@ -86,7 +86,14 @@ The difference with retrieving data from multiple columns is:
 
 #### Example:
 
-The following SELECT statement will retrieve three columns from the Customers table
+- The following SELECT statement will retrieve two columns from the Customers table
+
+```sql
+SELECT CustomerName, Address
+FROM Customers;
+```
+
+- The following SELECT statement will retrieve three columns from the Customers table
 
 ```sql
 SELECT CustomerName, Address, Country
@@ -101,6 +108,8 @@ This In addition to being able to specify column(s), the SELECT keyword can be u
 
 #### Example:
 
+- The following SELECT statement will retrieve all columns from the Customers table
+
 ```sql
 SELECT *
 FROM Customers;
@@ -113,7 +122,7 @@ This can be done by specifying the quantity with the LIMIT keyword
 
 #### Example:
 
-The following SELECT statement with the LIMIT keyword will retrieve the first 5 rows from the CustomerName Column from the Customers Table
+- The following SELECT statement with the LIMIT keyword will retrieve the first 5 rows from the CustomerName Column from the Customers Table
 
 ```sql
 SELECT CustomerName
@@ -133,7 +142,7 @@ LIMIT 5;
 
 #### Example
 
-The following SELECT statement with the GROUP BY keyword will retrieve the CustomerName Column in ASCENDING order from the Customers Table
+- The following SELECT statement with the GROUP BY keyword will retrieve the CustomerName Column in ASCENDING order from the Customers Table
 
 ```sql
 SELECT CustomerName
@@ -141,7 +150,7 @@ FROM Customers
 ORDER BY CustomerName;
 ```
 
-The following SELECT statement with the GROUP BY keyword will retrieve the CustomerName Column in DESCENDING order from the Customers Table
+- The following SELECT statement with the GROUP BY keyword will retrieve the CustomerName Column in DESCENDING order from the Customers Table
 
 ```sql
 SELECT CustomerName
@@ -186,7 +195,7 @@ ORDER BY CustomerName DESC, Country DESC;
 
 #### Example:
 
-The following SELECT statement with the WHERE keyword will retrieve the CustomerName Column where their Country field is EQUAL to Canada
+- The following SELECT statement with the WHERE keyword will retrieve the CustomerName Column where their Country field is EQUAL to Canada
 
 ```sql
 SELECT CustomerName
@@ -247,7 +256,7 @@ SQL supports a whole range of conditional operators (depending on your database 
 
 #### Example:
 
-The following SELECT statement with the WHERE keyword will retrieve the CustomerName Column where their Country field is NOT EQUAL to Canada
+- The following SELECT statement with the WHERE keyword will retrieve the CustomerName Column where their Country field is NOT EQUAL to Canada
 
 ```sql
 SELECT CustomerName
@@ -255,9 +264,25 @@ FROM Customers
 WHERE Country <> "Canada";
 ```
 
+- The following SELECT statement with the WHERE keyword will retrieve the ProductName and Price Column where the Price field is LESS THAN OR EQUAL to 20
+
+```sql
+SELECT ProductName, Price
+FROM Products
+WHERE Price <= 20;
+```
+
+- The following SELECT statement with the WHERE keyword will retrieve the ProductName and Price Column where the Price field is BETWEEN 10 and 20
+
+```sql
+SELECT ProductName, Price
+FROM Products
+WHERE Price BETWEEN 10 and 20;
+```
+
 #### Note:
 
-!= and <> can usually be used interchangeably, However, not all database management systems support both forms of the non-equality operator
+- != and <> can usually be used interchangeably, However, not all database management systems support both forms of the non-equality operator
 
 ---
 
@@ -308,7 +333,7 @@ The WHERE clause's NOT operator has one function and one function only - NOT neg
 ```sql
 SELECT CustomerName
 FROM Customers
-WHERE NOT Country = "Canada";
+WHERE Country NOT IN ("USA", "Canada");
 ```
 
 ---
