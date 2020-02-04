@@ -46,7 +46,7 @@ Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?file
 1. Query the names and phone numbers across all Shippers and Suppliers
 2. Query the fullnames of all customer and employee with the letter "a" is in their First or Last Name (be careful for case sensitivity)
 
-## Case Examples
+## Case Statements
 
 1. Query all Products details and return new calculated field, PriceRange with the following conditions
    1. If the product price is below or equal to 15, return "Low"

@@ -17,6 +17,7 @@
 11. [Joining Tables](#Joining-Tables)
 12. [Advanced Joins](#Advanced-Joins)
 13. [Combining Queries](#Combining-Queries)
+14. [Case Statement](#Case-Statement)
 
 ### Resources:
 
@@ -692,7 +693,7 @@ WHERE p.SupplierID = s.SupplierID
 
 #### Example:
 
-- The below SQL Statement returns all countries of the Suppliers and Customers within a single query result set.
+- The below SQL Statement returns all unique countries from the Suppliers and Customers table within a single query result set.
 
 ```sql
 SELECT Country FROM Suppliers
@@ -711,6 +712,27 @@ SELECT Country FROM Customers
 SELECT Country FROM Suppliers
 UNION ALL
 SELECT Country FROM Customers
+```
+
+---
+
+## Case Statement
+
+- The CASE statement goes through conditions and returns a value when the first condition is met (like an IF-THEN-ELSE statement)
+- Once a condition is true, it will stop reading and return the result.
+- If no conditions are true, it returns the value in the ELSE clause.
+
+#### Example:
+
+- The below SQL statement returns a value of YES if the order quantity is greater than 40. If not, a value of NO is returned under the calculated field, QuantityOver40
+
+```sql
+SELECT OrderID,
+CASE
+	WHEN Quantity > 40 THEN "YES"
+    ELSE "NO"
+END as QuantityOver40
+FROM OrderDetails
 ```
 
 ---
