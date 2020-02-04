@@ -40,10 +40,6 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
 2. Query all Customers details and calculate the total Customers per Country under new calculated field, TotalCustomers
 
-3. Query all Products to return two new calculated fields:
-   1. The minimum price under new calculated field, MinPrice
-   2. The maximum price under new calculated field, MaxPrice
-
 ## Join Queries
 
 1. Query all OrderDetails along with ProductName & Price and return (Quantity \* Price) under new calculated field, Total
