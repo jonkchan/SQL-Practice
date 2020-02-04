@@ -679,6 +679,40 @@ WHERE p.SupplierID = s.SupplierID
 
 ## Combining Queries
 
+- SQL also enables you to perform multiple queries (multiple SELECT statements) and return the results as a single query result set.
+- These combined queries are usually known as unions or compound queries
+
+### Using Union
+
+- Specify each SELECT statement and place the keyword UNION between each.
+- Rules:
+  - A UNION must be composed of two or more SELECT statements, each separated by the keyword UNION (so, if combining four SELECT statements that would be three UNION keywords used.)
+  - Each query in a UNION must contain the same columns, expressions, or aggregate functions (and some DBMSs even require that columns be listed in the same order).
+  - Column datatypes must be compatible; They need not be the exact same type, but they must be of a type that the DBMS can implicitly convert (for example, different numeric types or different date types).
+
+#### Example:
+
+- The below SQL Statement returns all countries of the Suppliers and Customers within a single query result set.
+
+```sql
+SELECT Country FROM Suppliers
+UNION
+SELECT Country FROM Customers
+```
+
+### Including or Eliminating Duplicates
+
+- The UNION keyword automatically removes any duplicate rows from the query result set
+- If you want all occurrences to be returned (regardless of duplicates), you can use UNION ALL instead of UNION
+
+#### Example:
+
+```sql
+SELECT Country FROM Suppliers
+UNION ALL
+SELECT Country FROM Customers
+```
+
 ---
 
 > You have reached the end of the SQL quick start guide!

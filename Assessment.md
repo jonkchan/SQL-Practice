@@ -9,8 +9,8 @@ Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?file
 1. [Basic Queries](#Basic-Queries)
 2. [Calculated Fields](#Calculated-Fields)
 3. [Grouping Data](#Grouping-Data)
-4. [Union](#Union)
-5. [Join Queries](#Join-Queries)
+4. [Join Queries](#Join-Queries)
+5. [Union](#Union)
 6. [Case Examples](#Case-Examples)
 
 ## Basic Queries
@@ -35,16 +35,16 @@ Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?file
    1. The minimum price under new calculated field, MinPrice
    2. The maximum price under new calculated field, MaxPrice
 
-## Union
-
-1. Query the names and phone numbers across all Shippers and Suppliers
-2. Query the fullnames of all customer and employee with the letter "a" is in their First or Last Name (be careful for case sensitivity)
-
 ## Join Queries
 
 1. Query all OrderDetails along with ProductName & Price and return (Quantity \* Price) under new calculated field, Total
 2. Query all Orders details along with Customer Name & Employee FirstName & LastName as new calculated field, EmployeeName
 3. Query all Shippers details and return the total number of Products shipped under new calculated field, TotalShippedProducts
+
+## Union
+
+1. Query the names and phone numbers across all Shippers and Suppliers
+2. Query the fullnames of all customer and employee with the letter "a" is in their First or Last Name (be careful for case sensitivity)
 
 ## Case Examples
 
