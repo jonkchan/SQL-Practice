@@ -1,6 +1,6 @@
 # Self-Assessment 📚📝
 
-Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) to get started
+▶️ Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) to get started
 
 ## Basic Queries
 
@@ -14,7 +14,7 @@ Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?file
 2. Query Customers & seperate ContactName into two new calculated fields, FirstName & LastName
 3. Query Products to return two new calculated fields:
    1. The price divided by 2 under new calculated field, HalfOff
-   2. The price plus 08% tax under new calculated field, NetPrice
+   2. The price plus 8% tax under new calculated field, NetPrice
 
 ## Grouping Data
 
@@ -24,12 +24,15 @@ Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?file
    1. The minimum price under new calculated field, MinPrice
    2. The maximum price under new calculated field, MaxPrice
 
+## Union
+
+1. Query the names and phone numbers across all Shippers and Suppliers
+2. Query the fullnames of all customer and employee with the letter "a" is in their First or Last Name (be careful for case sensitivity)
+
 ## Join Queries
 
 1. Query all OrderDetails along with ProductName & Price and return (Quantity \* Price) under new calculated field, Total
 2. Query all Orders details along with Customer Name & Employee FirstName & LastName as new calculated field, EmployeeName
 3. Query all Shippers details and return the total number of Products shipped under new calculated field, TotalShippedProducts
-
-## Union
 
 ## Nested Queries
