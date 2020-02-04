@@ -35,4 +35,8 @@
 2. Query all Orders details along with Customer Name & Employee FirstName & LastName as new calculated field, EmployeeName
 3. Query all Shippers details and return the total number of Products shipped under new calculated field, TotalShippedProducts
 
-## Nested Queries
+## Sub Queries
+
+1. TBD
+2. TBD
+3. TBD
