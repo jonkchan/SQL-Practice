@@ -495,7 +495,7 @@ FROM Customers
 
 - MAX() returns the highest value in a specified column.
 - MIN() returns the lowest value in a specificied column.
-- MAX() & MIN() require that the column name be specified.
+- Note: Both MAX() & MIN() require that the column name be specified.
 
 #### Example:
 
@@ -676,7 +676,7 @@ WHERE p.SupplierID = s.SupplierID
 
 - Not all DBMS support the AS keyword. In that case, simply specify the alias without the AS keyword (so `Products p` instead of `Products AS p`).
 
-### INNER, LEFT/ RIGHT, OUTER JOIN
+### Using INNER, LEFT/ RIGHT, OUTER JOIN
 
 - To be updated...
 
