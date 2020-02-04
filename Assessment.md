@@ -45,5 +45,5 @@ Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?file
    1. If the order quantity is even (e.g. 2, 4, 6), return "Even"
    2. If the order quantity is odd (e.g. 1, 3, 5), return "Odd"
 3. Query all Customers details and return new calculated field, Location with the following conditions
-   1. If the customers country is in the USA, return "Domestic"
-   2. Else, return "International"
+   1. If the customer's country is located in the USA, return "Domestic"
+   2. If the customer's country is not located in the USA, return "International"
