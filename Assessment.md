@@ -12,7 +12,7 @@ Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?file
 4. [Join Queries](#Join-Queries)
 5. [Union](#Union)
 6. [Case Examples](#Case-Examples)
-7. [Concepts: Short Answer Questions](#Concepts:-Short-Answer-Questions)
+7. [Concepts Short Answer Questions](#Concepts-Short-Answer-Questions)
 
 ## Basic Queries
 
@@ -60,7 +60,7 @@ Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?file
    1. If the customer's country is located in the USA, return "Domestic"
    2. If the customer's country is not located in the USA, return "International"
 
-## Concepts: Short Answer Questions
+## Concepts Short Answer Questions
 
 1. What is a join in SQL? What are the types of joins?
 2. What is the difference between a UNION and a JOIN query?
