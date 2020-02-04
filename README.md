@@ -719,9 +719,9 @@ FROM Orders
 INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 ```
 
-#### JOINS Diagram:
+#### JOINs Diagram:
 
-![JOINS Diagram](https://i.imgur.com/9zyrJM2.png)
+![JOINs Diagram](https://i.imgur.com/9zyrJM2.png)
 
 ---
 
