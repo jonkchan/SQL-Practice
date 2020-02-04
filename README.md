@@ -770,3 +770,5 @@ FROM OrderDetails
 ---
 
 > You have reached the end of the SQL quick start guide!
+
+[Go Back to Top](#A-Quick-Start-Guide-to-Learning-SQL)
