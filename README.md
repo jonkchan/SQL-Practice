@@ -722,8 +722,6 @@ SELECT Country FROM Customers
 - Once a condition is true, it will stop reading and return the result.
 - If no conditions are true, it returns the value in the ELSE clause.
 
-### Using Case
-
 #### Example:
 
 - The below SQL statement returns a value of LOW if the order quantity is less than 20.
