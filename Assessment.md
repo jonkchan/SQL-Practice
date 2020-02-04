@@ -12,6 +12,7 @@ Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?file
 4. [Join Queries](#Join-Queries)
 5. [Union](#Union)
 6. [Case Examples](#Case-Examples)
+7. [Concepts: Short Answer Questions](#Concepts:-Short-Answer-Questions)
 
 ## Basic Queries
 
