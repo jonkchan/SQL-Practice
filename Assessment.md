@@ -20,9 +20,9 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
 1. Query all OrderDetails where order quantity is greater than 10 but less than 30
 
-2. Query all Suppliers that are located in either the USA, UK, or Canada
+2. Query the names of all Suppliers that are located in either the USA, UK, or Canada
 
-3. Query all Employees with the letter "a" in either their First or Last Name (be careful for case sensitivity)
+3. Query all Employees with the letter "a" in either their First or Last Name (be careful for case sensitivity) and sort by LastName in ascending order
 
 ## Calculated Fields
 
