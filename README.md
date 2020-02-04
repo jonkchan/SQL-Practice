@@ -722,16 +722,19 @@ SELECT Country FROM Customers
 - Once a condition is true, it will stop reading and return the result.
 - If no conditions are true, it returns the value in the ELSE clause.
 
+### Using Case
+
 #### Example:
 
-- The below SQL statement returns a value of YES if the order quantity is greater than 40. If not, a value of NO is returned under the calculated field, QuantityOver40
+- The below SQL statement returns a value of LOW if the order quantity is less than 20. If the order quantity is greater or equal to 20 and less than 40, a value of MEDIUM is returned. If the order does not meet the first two conditions, a value of HIGH is returned
 
 ```sql
 SELECT OrderID,
 CASE
-	WHEN Quantity > 40 THEN "YES"
-    ELSE "NO"
-END as QuantityOver40
+    WHEN Quantity < 20 THEN "LOW"
+    WHEN Quantity >= 20 AND Quantity < 40 THEN "MEDIUM"
+    ELSE "HIGH"
+END as QuantityCategory
 FROM OrderDetails
 ```
 
