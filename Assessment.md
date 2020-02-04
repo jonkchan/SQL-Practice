@@ -58,3 +58,10 @@ Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?file
 3. Query all Customers details and return new calculated field, Location with the following conditions
    1. If the customer's country is located in the USA, return "Domestic"
    2. If the customer's country is not located in the USA, return "International"
+
+## Concepts: Short Answer Questions
+
+1. What is a join in SQL? What are the types of joins?
+2. What is the difference between a UNION and a JOIN query?
+3. What is a foreign key?
+4. What is the difference between a database versus a table versus a field?
