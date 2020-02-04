@@ -31,7 +31,7 @@
 ### What is SQL?
 
 - Structured Query Language (SQL) is a domain specific language used in programming and designed for managed data held in relational database management
-- It is particularly useful in handling STRUCTURED data, i.e. data incorporating rleations among entities and variables
+- It is particularly useful in handling STRUCTURED data, i.e. data incorporating relations among entities and variables
 
 ### Key Terms (_Simplified_):
 
@@ -58,7 +58,7 @@ FROM Customers;
 
 #### Note:
 
-- All extra white space within a SQL statement is ignored when the statement is processed. SQL statements can be specificed on one long line or broken up over many lines
+- All extra white space within a SQL statement is ignored when the statement is processed. SQL statements can be specified on one long line or broken up over many lines
 - Most SQL developers find that breaking up statements over multiple lines makes it easier to read and debug.
 
 #### Example:
@@ -82,7 +82,7 @@ Customers;
 The difference with retrieving data from multiple columns is:
 
 - Multiple column names must be specified after the SELECT keyword
-- Each column must be seperated by a comma
+- Each column must be separated by a comma
 
 #### Example:
 
@@ -97,7 +97,7 @@ FROM Customers;
 
 ### Retrieving Data from all Columns
 
-This In addition to being able to specify column(s), the SELECT keyword can be used to request all columns without having to list them out individually.This can be done by using the asterik (\*) wildcard
+This In addition to being able to specify column(s), the SELECT keyword can be used to request all columns without having to list them out individually. This can be done by using the asterisk (\*) wildcard
 
 #### Example:
 
@@ -151,8 +151,8 @@ ORDER BY CustomerName DESC;
 
 #### Sorting by Multiple Columns
 
-- It is often neccessary to sort by multiple columns. For example, if you want to retireve a list of customer names and their countries in ASCENDING order.
-- To sort by multiple columns, specify the column names seperated by commas
+- It is often necessary to sort by multiple columns. For example, if you want to retrieve a list of customer names and their countries in ASCENDING order.
+- To sort by multiple columns, specify the column names separated by commas
 
 #### Example:
 
@@ -186,7 +186,7 @@ ORDER BY CustomerName DESC, Country DESC;
 
 #### Example:
 
-The following SELECT statement with the WHERE keyword will retrieve the CustomerName Column where their Country field is EQUAL to Canda
+The following SELECT statement with the WHERE keyword will retrieve the CustomerName Column where their Country field is EQUAL to Canada
 
 ```sql
 SELECT CustomerName
@@ -225,11 +225,11 @@ SQL supports a whole range of conditional operators (depending on your database 
 </tr>
 <tr>
     <td>></td>
-    <td>Greather than</td>
+    <td>Greater than</td>
 </tr>
 <tr>
     <td>>=</td>
-    <td>Greather than or equal to</td>
+    <td>Greater than or equal to</td>
 </tr>
 <tr>
     <td>!></td>
@@ -237,7 +237,7 @@ SQL supports a whole range of conditional operators (depending on your database 
 </tr>
 <tr>
     <td>BETWEEN</td>
-    <td>Between two specificed values</td>
+    <td>Between two specified values</td>
 </tr>
 <tr>
     <td>IS NULL</td>
@@ -247,7 +247,7 @@ SQL supports a whole range of conditional operators (depending on your database 
 
 #### Example:
 
-The following SELECT statement with the WHERE keyword will retrieve the CustomerName Column where their Country field is NOT EQUAL to Canda
+The following SELECT statement with the WHERE keyword will retrieve the CustomerName Column where their Country field is NOT EQUAL to Canada
 
 ```sql
 SELECT CustomerName
@@ -257,7 +257,7 @@ WHERE Country <> "Canada";
 
 #### Note:
 
-!= and <> can usually be used interchangeablly, However, not all database management systems support both forms of the non-equality operator
+!= and <> can usually be used interchangeably, However, not all database management systems support both forms of the non-equality operator
 
 ---
 
@@ -318,9 +318,9 @@ WHERE NOT Country = "Canada";
 ### The LIKE keyword
 
 - **Wildcards:** Special characters used to match parts of a value
-- **Search pattern:** A seach condition made up o fliteral text, wildcard characters, or any combination of the above.
+- **Search pattern:** A search condition made up of literal text, wildcard characters, or any combination of the above.
 - Using wildcards, you can create search patterns that can be compared against your data
-- To use wildcards in search claues, the LIKE operator must be used.
+- To use wildcards in search clauses, the LIKE operator must be used.
 
 ### The Percent Sign (%) Wildcard
 
@@ -389,7 +389,7 @@ Where CustomerName LIKE '[AB]%'
 ### What is a Calculated Field?
 
 - Data stored within a database's tables is often not available in the exact format needed by your application.
-  - City, State, and ZIP codes are stored in separate columns, but your mailing lable needs them retireved as one correctly formatted field.
+  - City, State, and ZIP codes are stored in separate columns, but your mailing label needs them retrieved as one correctly formatted field.
   - Column data is in mixed upper and lowercase, and your report needs all data presented in uppercase.
   - You need total, averages, or other calculations based on table data.
 - What you really want is to retrieve converted, calculated, or reformatted data directly from the database.
@@ -436,7 +436,7 @@ FROM Customers
 
 ### Performing Calculations
 
-- Another frequent use of calculated fileds is performing mathematical calculations on retrieved data.
+- Another frequent use of calculated fields is performing mathematical calculations on retrieved data.
 - SQL supports the basic mathematical operators listed below:
 
 | Operator | Description    |
@@ -489,12 +489,12 @@ FROM Customers
 
 #### Note:
 
-- NULL Values - Column rows with NULL values in them are ignored by the COUNT() function if a column name is specified, but not if the asterik (\*) is used.
+- NULL Values - Column rows with NULL values in them are ignored by the COUNT() function if a column name is specified, but not if the asterisk (\*) is used.
 
 ### The MAX() / MIN() Function
 
 - MAX() returns the highest value in a specified column.
-- MIN() returns the lowest value in a specificied column.
+- MIN() returns the lowest value in a specified column.
 - Note: Both MAX() & MIN() require that the column name be specified.
 
 #### Example:
@@ -526,7 +526,7 @@ FROM Products
 
 #### Important Rules:
 
-- GROUP BY claues can contain as many columns as you want. This enables you to nest groups, providing you wiht more granular control over how data is grouped.
+- GROUP BY clauses can contain as many columns as you want. This enables you to nest groups, providing you with more granular control over how data is grouped.
 - If you have nested groups in your GROUP BY clauses, data is summarized at the last specified group. In other words, all the columns specified are evaluated together when grouping is established,
 - The GROUP BY clause must come after any WHERE clauses and before any ORDER BY clause.
 
@@ -546,7 +546,7 @@ GROUP BY CategoryID
   - For example, you might want a list of all customers who have made at least two orders.
   - To obtain this data you must filter based on the complete group, not on individual rows.
 - SQL provides a clauses for this purpose: the HAVING clause
-  - HAVING is very similiar to WHERE, all types of WHERE clauses can also be used with HAVING.
+  - HAVING is very similar to WHERE, all types of WHERE clauses can also be used with HAVING.
 
 #### Example
 
@@ -624,7 +624,7 @@ FROM Suppliers
 ### Why use Joins?
 
 - Breaking data into multiple tables enables more efficient storage, easier manipulation, and greater scalability. If data is stored in multiple tables, how can you retrieve that data with a single SELECT statement?
-- The answer is to use a join. A join is a mechanism used to associate tables wihtin a SELECT statement.
+- The answer is to use a join. A join is a mechanism used to associate tables within a SELECT statement.
 - Using a special syntax, multiple tables can be joined so that a single set of output is returned, and the join associates the correct rows in each table on-the-fly.
 
 ### Creating a Join
@@ -641,7 +641,7 @@ WHERE Products.SupplierID = Suppliers.SupplierID
 
 ### The Importance of the WHERE clause
 
-- The WHERE clause acts as a filter to only include rows that match the specified filter condiiton - the join condiiton.
+- The WHERE clause acts as a filter to only include rows that match the specified filter condition - the join condition.
 - Without the WHERE clause, every row in the first table will be paired with every row in the second table, regardless if they logically go together or not.
 
 #### Example:
