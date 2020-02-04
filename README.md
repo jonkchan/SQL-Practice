@@ -23,6 +23,7 @@
 
 - [SQL Playground](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
 - [SQL Quiz](https://www.w3schools.com/sql/sql_quiz.asp)
+- [SQL Assessment](./Assessment.md)
 
 ---
 
