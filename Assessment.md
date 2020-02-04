@@ -1,4 +1,4 @@
-# Self-Assessment
+# Self-Assessment 📚📝
 
 Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) to get started
 
