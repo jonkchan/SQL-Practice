@@ -710,13 +710,14 @@ WHERE p.SupplierID = s.SupplierID
   - LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
   - RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
   - FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+- Note: Depending on the DBMS, words in parenthesis may be omitted
 
 #### Example:
 
 ```sql
-SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
-FROM Orders
-INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+SELECT o.OrderID, c.CustomerName, o.OrderDate
+FROM Orders o
+INNER JOIN Customers c ON o.CustomerID=c.CustomerID;
 ```
 
 #### JOINs Diagram:
