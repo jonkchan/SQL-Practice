@@ -22,7 +22,7 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
 2. Query the names of all Suppliers that are located in either the USA, UK, or Canada
 
-3. Query all Employees with the letter "a" in either their First or Last Name (be careful for case sensitivity) and sort by LastName in ascending order
+3. Query all Employees who's first name starts with an A and sort by LastName then FirstName in ascending order
 
 ## Calculated Fields
 
