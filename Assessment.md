@@ -110,16 +110,16 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
    2. The price plus 8% tax under new calculated field, NetPrice
 
       <details>
-      <summary>Reveal Solution</summary>
+         <summary>Reveal Solution</summary>
 
-   ```sql
-   SELECT
-      LEFT(ContactName, CHARINDEX(' ', ContactName)) AS FirstName,
-      RIGHT(ContactName, LEN(ContactName) - CHARINDEX(' ', ContactName)) As LastName
-   FROM Customers
-   ```
+      ```sql
+      SELECT
+         LEFT(ContactName, CHARINDEX(' ', ContactName)) AS FirstName,
+         RIGHT(ContactName, LEN(ContactName) - CHARINDEX(' ', ContactName)) As LastName
+      FROM Customers
+      ```
 
-   </details>
+      </details>
 
 ## Grouping Data
 
