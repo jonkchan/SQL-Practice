@@ -20,9 +20,27 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
 1. Query all OrderDetails where order quantity is greater than 10 but less than 30
 
-2. Query the names of all Suppliers that are located in either the USA, UK, or Canada
+   <details>
+      <summary>Reveal Solution</summary>
+      
+      Solution #1
+      ```sql
+      SELECT * FROM OrderDetails
+      WHERE Quantity > 10 AND Quantity < 30;
+      ```
 
-3. Query all Employees who's first name starts with an A and sort by LastName then FirstName in ascending order
+   Solution #2
+
+   ```sql
+   SELECT * FROM OrderDetails
+   WHERE Quantity BETWEEN 21 AND 29;
+   ```
+
+   </details>
+
+2) Query the names of all Suppliers that are located in either the USA, UK, or Canada
+
+3) Query all Employees who's first name starts with an A and sort by LastName then FirstName in ascending order
 
 ## Calculated Fields
 
