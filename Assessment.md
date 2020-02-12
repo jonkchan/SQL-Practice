@@ -75,7 +75,7 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
 ## Calculated Fields
 
-1. Query all Employees details & concatenate FirstName & LastName columns into new calculated field, FullName
+1. Query Employees to return employee FirstName & LastName together under new calculated field, FullName
 
    <details>
       <summary>Reveal Solution</summary>
