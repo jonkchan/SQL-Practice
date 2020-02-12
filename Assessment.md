@@ -81,7 +81,7 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
       <summary>Reveal Solution</summary>
 
    ```sql
-   SELECT *, CONCAT(FirstName, LastName) AS FullName
+   SELECT CONCAT(FirstName, LastName) AS FullName
    FROM Employees
    ```
 
