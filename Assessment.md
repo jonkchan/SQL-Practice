@@ -106,17 +106,17 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
 3. Query Products to return two new calculated fields:
 
-   1. The price divided by 2 under new calculated field, HalfOff
-   2. The price plus 8% tax under new calculated field, NetPrice
+   1. The price divided by 2 under new calculated field, HalfOff (Round to nearest 2 decimals)
+   2. The price plus 8% tax under new calculated field, NetPrice (Round to nearest 2 decimals)
 
       <details>
          <summary>Reveal Solution</summary>
 
       ```sql
       SELECT
-         LEFT(ContactName, CHARINDEX(' ', ContactName)) AS FirstName,
-         RIGHT(ContactName, LEN(ContactName) - CHARINDEX(' ', ContactName)) As LastName
-      FROM Customers
+         ROUND(Price/2, 2) AS HalfOff,
+         ROUND(Price * 1.08, 2) As NetPrice
+      FROM Products
       ```
 
       </details>
