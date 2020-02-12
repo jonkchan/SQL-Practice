@@ -92,17 +92,17 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
    1. ContactName's first name under new calculated field, FirstName
    2. ContactName's last name under new calculated field, LastName
 
-   <details>
-      <summary>Reveal Solution</summary>
+      <details>
+         <summary>Reveal Solution</summary>
 
-   ```sql
-   SELECT
-      LEFT(ContactName, CHARINDEX(' ', ContactName)) AS FirstName,
-      RIGHT(ContactName, LEN(ContactName) - CHARINDEX(' ', ContactName)) As LastName
-   FROM Customers
-   ```
+      ```sql
+      SELECT
+         LEFT(ContactName, CHARINDEX(' ', ContactName)) AS FirstName,
+         RIGHT(ContactName, LEN(ContactName) - CHARINDEX(' ', ContactName)) As LastName
+      FROM Customers
+      ```
 
-   </details>
+      </details>
 
 3. Query Products to return two new calculated fields:
 
