@@ -40,7 +40,46 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
 2) Query the names of all Suppliers that are located in either the USA, UK, or Canada
 
-3) Query all Employees who's first name starts with an A and sort by LastName then FirstName in ascending order
+   <details>
+      <summary>Reveal Solution</summary>
+
+   ```sql
+   SELECT * FROM Suppliers
+   WHERE Country IN ("USA", "UK", "Canada")
+   ```
+
+   </details>
+
+3) Query the FirstName of Employees who's FirstName starts with the letter A then sort by FirstName in descending order
+
+   <details>
+      <summary>Reveal Solution</summary>
+
+   Solution #1
+
+   ```sql
+   SELECT * FROM Employees
+   WHERE LEFT(FirstName, 1) == "A"
+   ORDER BY FirstName DESC
+   ```
+
+   Solution #2
+
+   ```sql
+   SELECT * FROM Employees
+   WHERE SUBSTRING(FirstName, 1, 1) == "A"
+   ORDER BY FirstName DESC
+   ```
+
+   Solution #3
+
+   ```sql
+   SELECT * FROM Employees
+   WHERE MID(FirstName, 1, 1) == "A"
+   ORDER BY FirstName DESC
+   ```
+
+   </details>
 
 ## Calculated Fields
 
