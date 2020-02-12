@@ -136,7 +136,7 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
    </details>
 
-2. Query Countries from Customers and calculate the total Customers per Country under new calculated field, TotalCustomers. Finally, sort by TotalCustomers in descending order.
+2. Query Countries from Customers and calculate the total Customers per Country under new calculated field, TotalCustomers. Finally, sort TotalCustomers from highest to lowest.
 
    <details>
       <summary>Reveal Solution</summary>
