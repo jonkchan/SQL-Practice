@@ -2,7 +2,7 @@
 
 ### Get Started
 
-Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) to get started.
+Navigate to [W3 School's Database](https://www.w3schools.com/sql/trysqlserver.asp?filename=trysql_func_sqlserver_concat3) to get started.
 
 If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
@@ -59,7 +59,7 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
    ```sql
    SELECT * FROM Employees
-   WHERE LEFT(FirstName, 1) == "A"
+   WHERE LEFT(FirstName, 1) = 'A'
    ORDER BY FirstName DESC
    ```
 
@@ -67,15 +67,7 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
    ```sql
    SELECT * FROM Employees
-   WHERE SUBSTRING(FirstName, 1, 1) == "A"
-   ORDER BY FirstName DESC
-   ```
-
-   Solution #3
-
-   ```sql
-   SELECT * FROM Employees
-   WHERE MID(FirstName, 1, 1) == "A"
+   WHERE SUBSTRING(FirstName, 1, 1) = 'A'
    ORDER BY FirstName DESC
    ```
 
@@ -85,11 +77,49 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
 1. Query all Employees details & concatenate FirstName & LastName columns into new calculated field, FullName
 
-2. Query Customers & separate ContactName into two new calculated fields, FirstName & LastName
+   <details>
+      <summary>Reveal Solution</summary>
+
+   ```sql
+   SELECT *, CONCAT(FirstName, LastName) AS FullName
+   FROM Employees
+   ```
+
+   </details>
+
+2. Query Customers to return two new calculated fields
+
+   1. ContactName's first name under new calculated field, FirstName
+   2. ContactName's last name under new calculated field, LastName
+
+   <details>
+      <summary>Reveal Solution</summary>
+
+   ```sql
+   SELECT
+      LEFT(ContactName, CHARINDEX(' ', ContactName)) AS FirstName,
+      RIGHT(ContactName, LEN(ContactName) - CHARINDEX(' ', ContactName)) As LastName
+   FROM Customers
+   ```
+
+   </details>
 
 3. Query Products to return two new calculated fields:
+
    1. The price divided by 2 under new calculated field, HalfOff
    2. The price plus 8% tax under new calculated field, NetPrice
+
+      <details>
+      <summary>Reveal Solution</summary>
+
+   ```sql
+   SELECT
+      LEFT(ContactName, CHARINDEX(' ', ContactName)) AS FirstName,
+      RIGHT(ContactName, LEN(ContactName) - CHARINDEX(' ', ContactName)) As LastName
+   FROM Customers
+   ```
+
+   </details>
 
 ## Grouping Data
 
