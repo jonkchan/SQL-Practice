@@ -147,6 +147,7 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
       SUM(CustomerID) As TotalCustomers
    FROM Customers
    GROUP BY Country
+   ORDER BY TotalCustomers DESC
    ```
 
    </details>
