@@ -123,9 +123,33 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
 ## Grouping Data
 
-1. Query all OrderDetails and calculated the average quantity order per ProductID under new calculated field, AverageQuantity
+1. Query OrderDetails to calculate the average quantity order per ProductID under new calculated field, AvgQuantity
 
-2. Query all Customers details and calculate the total Customers per Country under new calculated field, TotalCustomers
+   <details>
+      <summary>Reveal Solution</summary>
+
+   ```sql
+   SELECT AVG(Quantity) As AvgQuantity
+   FROM OrderDetails
+   GROUP BY ProductID
+   ```
+
+   </details>
+
+2. Query Countries from Customers and calculate the total Customers per Country under new calculated field, TotalCustomers. Finally, sort by TotalCustomers in descending order.
+
+   <details>
+      <summary>Reveal Solution</summary>
+
+   ```sql
+   SELECT
+      Country,
+      SUM(CustomerID) As TotalCustomers
+   FROM Customers
+   GROUP BY Country
+   ```
+
+   </details>
 
 ## Join Queries
 
