@@ -33,7 +33,7 @@ If you need a SQL refresher, visit the [SQL Start Guide](./README.md).
 
    ```sql
    SELECT * FROM OrderDetails
-   WHERE Quantity BETWEEN 21 AND 29;
+   WHERE Quantity BETWEEN 11 AND 29;
    ```
 
    </details>
